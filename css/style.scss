@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    font-size: 10px;
+}
+
+$color-text-f:#ffffff;
+$color-text-c:#C2C2C2;
+$color-text-0:#00D6B4;
+$color-text-2:#222222;
+$color-text-9:#999999;
+%all-text-style {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+
+%second-text-style {
+    font-family: Open Sans;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: $color-text-2;
+}
+
+.head-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 540px;
+    background-image: url('/img/IMAGE.svg');
+    width: 100%;
+    .head-block__in-block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 940px/1440px*100%;
+        margin: 0 auto;
+        nav {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            height: 60px;
+            margin-top: 28px;
+            h1 {
+                @extend %all-text-style;
+                color: $color-text-f;
+                font-size: 2.4rem;
+                line-height: 30px;
+            }
+            .nav-block {
+                display: flex;
+                width: 30%;
+                justify-content: space-between;
+                a {
+                    text-decoration: none;
+                    @extend %all-text-style;
+                    font-size: 1.1rem;
+                    line-height: 17px;
+                    color: $color-text-9;
+                    &:hover {
+                        color: $color-text-0;
+                    }
+                    &:active {
+                        color: $color-text-0;
+                    }
+                    &:after {
+                        color: $color-text-0;
+                    }
+                }
+            }
+        }
+        .head-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 172px;
+            margin-top: 140px;
+            p {
+                color: $color-text-f;
+                @extend %all-text-style;
+                font-size: 4.8rem;
+                line-height: 53px;
+                width: 55%;
+                text-align: center;
+            }
+            button {
+                width: 137px;
+                height: 39px;
+                @extend %all-text-style;
+                color: $color-text-0;
+                background: none;
+                border-color: $color-text-0;
+                cursor: pointer;
+                margin-top: 29px;
+            }
+        }
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        @extend %all-text-style;
+        color: $color-text-f;
+        font-size: 2.5rem;
+        line-height: 30px;
+        margin-bottom: 33px;
+    }
+    .wrapper__block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 940px/1440px*100%;
+        margin: 0 auto;
+        &>div {
+            flex: 0, 35%;
+        }
+        div {
+            cursor: pointer;
+            img:hover {
+                background-color: $color-text-c;
+                opacity: 0.2;
+                animation-duration: 1s;
+                border-radius: 2%;
+            }
+        }
+    }
+}
+
+.footer-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 122px;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        .all-text {
+            @extend %all-text-style;
+            color: $color-text-c;
+            font-size: 1.8rem;
+            line-height: 22px;
+        }
+        .second-text {
+            @extend %second-text-style;
+            color: $color-text-9;
+            font-size: 1.2rem;
+            line-height: 18px;
+        }
+    }
+}

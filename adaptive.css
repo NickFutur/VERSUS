@@ -1,0 +1,26 @@
+@media only screen and (max-width: 768px) {
+  .wrapper .wrapper__block {
+    justify-content: center; }
+
+  .head-block .head-block__in-block nav {
+    height: 30px; }
+    .head-block .head-block__in-block nav .nav-block {
+      width: 40%; }
+  .head-block .head-block__in-block .head-info p {
+    width: 90%; } }
+@media only screen and (max-width: 480px) {
+  :root {
+    font-size: 8px; }
+
+  .head-block {
+    height: 100%; }
+    .head-block .head-block__in-block .head-info {
+      height: 100%;
+      margin-top: 80px;
+      margin-bottom: 20px; }
+
+  .wrapper h3 {
+    margin-top: 20px;
+    margin-bottom: 20px; } }
+
+/*# sourceMappingURL=adaptive.css.map */
